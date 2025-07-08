@@ -1,0 +1,12 @@
+print("Você está aqui hoje com um único objetivo! Calcular a área de um retángulo! ")
+print("Aqui vai a explicação do que é um retângulo: é uma figura geométrica plana que possui quatro lados e quatro ângulos retos (ângulos de 90 graus) ")
+print("-------------------------------------------------------------------------------------------------------------------------------------------------")
+
+
+print("Use . (ponto) para números quebrados e não , (vírgula)")
+rectangle_base = float(input("Informe a BASE do retângulo "))
+rectangle_height = float(input("Informe a ALTURA do retângulo "))
+
+area_rectangle = rectangle_base * rectangle_height 
+
+print(f"A área do RETÂNGULO calculado é: {area_rectangle:.2f} ")
