@@ -1,8 +1,8 @@
-number = float("Insira um número para validarmos se é positivo,negativo ou zero! ")
+number = float(input("Insira um número para validarmos se é positivo,negativo ou zero! \n"))
 
 if number > 0: 
-    print("O número informado é POSITIVO ")
+    print(f"O número {number} é POSITIVO ")
 elif number < 0:
-    print("O número informado é NEGATIVO ")
+    print(f"O número {number} é NEGATIVO ")
 else:
-    print("O número informado é ZERO")
+    print(f"O número {number}é ZERO")
