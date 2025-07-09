@@ -1,0 +1,8 @@
+number = float("Insira um número para validarmos se é positivo,negativo ou zero! ")
+
+if number > 0: 
+    print("O número informado é POSITIVO ")
+elif number < 0:
+    print("O número informado é NEGATIVO ")
+else:
+    print("O número informado é ZERO")
