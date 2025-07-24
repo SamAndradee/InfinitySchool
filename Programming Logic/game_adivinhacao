@@ -1,0 +1,20 @@
+count_try = 0 
+number_game = 7 
+
+print("Olá Jogador! Agora você irá pariticipar de um jogo de adivinhação! ")
+print("REGRA NÚMERO 1 --- Você terá até 3 tentativas!")
+print("REGRA NÚMERO 2 --- Você terá que adivinhar um número, por tanto utilize DÍGITOS! ")
+
+
+while count_try < 3: 
+    count_try += 1 
+
+    attempt = int(input("Tente adivinhar o número: "))
+
+    if attempt == number_game:
+        print("Parabéns!! Você acertou o número! Deveria jogar na MEGA SENA.")
+        break
+    else:
+        print("Infelizmente, você errou! Mas tem mais uma tentativa! ")
+else:
+    print("\nInfelizmente você esgotou as suas tentativas! O número era 7. ")
