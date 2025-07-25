@@ -1,0 +1,17 @@
+somatoria = 0 
+numero_par = False
+print("Iremos agora, calcular a soma dos números pares, dentro do intervalo que você irá informar! ")
+print("Você deve informar apenas dois números inteiros! ")
+
+intervalo_um = int(input("Informe o primeiro número inteiro: "))
+intervalo_dois = int(input("Informe o segundo número inteiro: "))
+
+for i in range(intervalo_um,intervalo_dois + 1):
+    if i % 2 == 0:
+        somatoria += i
+        numero_par = True 
+else:
+    if numero_par == True:
+        print(f"A somatória entre os números apresentados foi: {somatoria}")
+    else:
+        print("Nenhum número par foi encontrado para realizar a somatória!")
