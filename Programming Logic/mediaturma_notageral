@@ -1,0 +1,28 @@
+media_for_class = 0 
+
+print("Olá!! Você irá agora utilizar um programa que irá calcular a média dos alunos na Disciplina de Lógica de Programção! ")
+number_of_students = int(input("Informe a quantidade de alunos na sala: "))
+
+for i in range(number_of_students):
+    name_student = input("Informe o nome do Aluno: ")
+    nota1 = float(input("Informe a primeira nota: "))
+    nota2 = float(input("Informe a segunda nota: "))
+    nota3 = float(input("Informe a terceira nota: "))
+
+    media_aluno_final = (nota1 + nota2 + nota3) / 3
+    media_for_class += media_aluno_final
+
+    print(f"O Aluno: {name_student}")
+    print(f"Notas do período: {nota1}, {nota2} e {nota3}")
+    print(f"Teve a média final: {media_aluno_final:.2f}")
+    print("Por tanto:...")
+
+    if media_aluno_final >= 7:
+        print("PARABÉNS!! ALUNO APROVADO!")
+    else:
+        print("INFELIZMENTE, ALUNO REPROVADO! ")
+
+media_geral_turma = media_for_class / number_of_students
+print(f"\n##################################")
+print(f"A MÉDIA GERAL DA TURMA FOI: {media_geral_turma:.2f}")
+print(f"##################################")
