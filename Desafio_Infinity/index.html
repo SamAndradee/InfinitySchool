@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Point - Lojinha do Kalil </title>
+
+    <link rel="shortcut icon" href="./imagens/icon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <header class="app-header">
+            <h1>Geek Point Lojinha do Kalil</h1>
+        </header>
+
+        <main class="main-content">
+
+            <section id="products-section" class="products-module">
+                <h2>Produtos Disponíveis</h2>
+                <div id="product-grid" class="product-grid">
+                    </div>
+            </section>
+
+            <aside id="cart-section" class="cart-module">
+                <h2 id="cart-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                    Carrinho
+                </h2>
+                <ul id="cart-items" class="cart-items">
+                    <li class="cart-empty-message">Seu carrinho está vazio.</li>
+                </ul>
+
+                <div class="cart-summary">
+                    <div class="total-section">
+                        <span>Total:</span>
+                        <span id="cart-total">R$ 0,00</span>
+                    </div>
+                    <button id="checkout-btn" class="checkout-btn">Finalizar Compra</button>
+                </div>
+            </aside>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
