@@ -1,0 +1,23 @@
+usuario_correto = "admin"
+senha_correta = "admin"
+
+tentativas_login = 3
+
+print("---------------------------------")
+print("TELA DE LOGIN - MANSUEL´S SYSTEM")
+print("---------------------------------")
+
+while tentativas_login > 3:
+    print("Insira os dados de LOGIN!")
+    user_login = input("USUÁRIO: ")
+    user_password = input("SENHA: ")
+    if user_login != "admin" or user_password != "admin":
+        tentativas_login -= 1
+        print("USUÁRIO OU SENHA INVÁLIDOS!")
+        print(f"RESTAM {tentativas_login} TENTATIVAS!")
+        if tentativas_login == 0:
+            for i in range(3):
+                print("ACESSO BLOQUEADO")
+    elif user_login == usuario_correto and user_password == senha_correta:
+        print("\nSEJAM BEM VINDO AO MANSUEL´S SYSTEM!")
+        break
